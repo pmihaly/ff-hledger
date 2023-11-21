@@ -16,9 +16,8 @@
       {
         devShell = nixpkgs.legacyPackages.${system}.mkShell {
           buildInputs = deps;
-          shellHook = ''
-            export LEDGER_FILE=all.journal
-          '';
+
+          LEDGER_FILE = "all.journal";
         };
       });
 }
