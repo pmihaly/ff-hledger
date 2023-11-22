@@ -11,6 +11,7 @@
         deps = with pkgs; [
           stack
           hledger
+          haskell.compiler.ghc947
         ];
       in
       {
