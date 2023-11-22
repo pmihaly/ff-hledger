@@ -12,8 +12,12 @@
     expenses:unknown
 
 2015-04-07 (DEB) TRANSFER TO 12345678
-    assets:Lloyds:current        £-500.00 = £753.72
-    assets:Lloyds:savings
+    assets:Lloyds:current          £-500.00 = £753.72
+    assets:Lloyds:transfers
+
+2015-04-07 (DEB) TRANSFER FROM 99966633
+    assets:Lloyds:savings           £500.00 = £500.00
+    assets:Lloyds:transfers
 
 2015-04-08 (BP) OASIS COFFEE
     assets:Lloyds:current          £-3.72 = £750.00

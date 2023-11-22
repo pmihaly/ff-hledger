@@ -15,4 +15,8 @@ EMPLOYER INC
 
 if
 TRANSFER TO 12345678
-  account2   assets:Lloyds:savings
+  account2   assets:Lloyds:transfers
+
+if
+TRANSFER FROM 99966633
+  account2   assets:Lloyds:transfers
