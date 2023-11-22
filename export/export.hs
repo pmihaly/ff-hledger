@@ -121,10 +121,10 @@ export_all flags targets = return $ Just $ do
   (opening_balances "//*") %> generate_opening_balances flags year_inputs
 
   -- Enumerate directories with auto-generated cleaned csv files
-  [ ] |%> in2csv
+  [ "//import/lloyds/csv/*.csv" ] |%> in2csv
 
   -- Enumerate directories with auto-generated journals
-  [ ] |%> csv2journal
+  [ "//import/lloyds/journal/*.journal" ] |%> csv2journal
 
 -------------------------------------
 -- Implementations of the build rules
