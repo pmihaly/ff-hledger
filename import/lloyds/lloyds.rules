@@ -12,3 +12,7 @@ INTEREST
 if
 EMPLOYER INC
   account2   income:employer
+
+if
+TRANSFER TO 12345678
+  account2   assets:Lloyds:savings

@@ -21,7 +21,7 @@ import System.Directory as D
 -- 3. Name of the hledger binary
 -- 4. Which accounts to include into opening/closing balances
 --
-defaultFirstYear     = 2017 :: Int
+defaultFirstYear     = 2014 :: Int
 defaultCurrentYear   = 2017
 defaultBaseDir       = ".."
 defaultHledgerBinary = "hledger"
