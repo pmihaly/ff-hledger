@@ -1,6 +1,5 @@
-#!/usr/bin/env stack
--- stack --resolver ghc-9.4.7 script --system-ghc --package shake --package directory --optimize --package extra --package filepattern --package hashable --package heaps --package js-dgtable --package js-flot --package js-jquery --package primitive --package random --package unordered-containers --package utf8-string --package clock --package splitmix
-
+#!/usr/bin/env nix-shell
+#!nix-shell --pure -i runghc -p "haskellPackages.ghcWithPackages (pkgs: with pkgs; [ shake ])" -p "hledger" -p "gnused"
 
 
 import Development.Shake

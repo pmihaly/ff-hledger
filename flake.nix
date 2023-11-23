@@ -9,10 +9,8 @@
       let
         pkgs = nixpkgs.legacyPackages.${system};
         deps = with pkgs; [
-          stack
           hledger
           hledger-web
-          haskell.compiler.ghc947
         ];
       in
       {

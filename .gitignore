@@ -5,3 +5,4 @@ export/export
 export/export.hi
 export/export.o
 export/.shake
+.shake
