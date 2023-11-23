@@ -1,0 +1,9 @@
+if|account2|comment
+INTEREST|income:interest|
+EMPLOYER INC|income:employer|
+TRANSFER TO 12345678|assets:Lloyds:transfers|
+TRANSFER FROM 99966633|assets:Lloyds:transfers|
+WAITROSE|expenses:groceries|
+OASIS COFFEE|expenses:coffee|
+AVIVA|assets:pension:aviva|this is a comment
+2017-10-11.*EMPLOYER INC||per diem for the trip to New York

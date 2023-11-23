@@ -5,30 +5,4 @@ date-format %d/%m/%Y
 currency1 £
 account2  expenses:unknown
 
-if
-INTEREST
-  account2   income:interest
-
-if
-EMPLOYER INC
-  account2   income:employer
-
-if
-TRANSFER TO 12345678
-  account2   assets:Lloyds:transfers
-
-if
-TRANSFER FROM 99966633
-  account2   assets:Lloyds:transfers
-
-if
-WAITROSE
-  account2   expenses:groceries
-
-if
-OASIS COFFEE
-  account2   expenses:coffee
-
-if
-AVIVA
-  account2   assets:pension:aviva
+include rules.psv

@@ -15,7 +15,7 @@
     assets:Lloyds:current         £-73.72 = £700.00
     expenses:groceries
 
-2014-05-01 (BP) AVIVA
+2014-05-01 (BP) AVIVA  ; this is a comment
     assets:Lloyds:current        £-100.00 = £600.00
     assets:pension:aviva
 

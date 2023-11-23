@@ -25,7 +25,7 @@
     assets:Lloyds:current          £-2.76 = £1086.93
     expenses:coffee
 
-2017-05-01 (BP) AVIVA
+2017-05-01 (BP) AVIVA  ; this is a comment
     assets:Lloyds:current        £-100.00 = £986.93
     assets:pension:aviva
 
