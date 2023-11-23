@@ -2,6 +2,7 @@
     assets:Lloyds:current                   £100.00 = £100.00
     assets:Lloyds:savings                  £1500.00 = £1500.00
     assets:cash                             £150.00 = £150.00
+    assets:pension:aviva                    £300.00 = £300.00
     equity:opening/closing balances
 
 2017-03-30 (BGC) EMPLOYER INC
@@ -18,13 +19,13 @@
 
 2017-04-07 (DEB) WAITROSE
     assets:Lloyds:current          £-5.24 = £1089.69
-    expenses:unknown
+    expenses:groceries
 
 2017-04-07 (BP) OASIS COFFEE
     assets:Lloyds:current          £-2.76 = £1086.93
-    expenses:unknown
+    expenses:coffee
 
 2017-05-01 (BP) AVIVA
     assets:Lloyds:current        £-100.00 = £986.93
-    expenses:unknown
+    assets:pension:aviva
 

@@ -20,3 +20,15 @@ TRANSFER TO 12345678
 if
 TRANSFER FROM 99966633
   account2   assets:Lloyds:transfers
+
+if
+WAITROSE
+  account2   expenses:groceries
+
+if
+OASIS COFFEE
+  account2   expenses:coffee
+
+if
+AVIVA
+  account2   assets:pension:aviva

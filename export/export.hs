@@ -41,6 +41,8 @@ balance_sheet     y = y++"-balance-sheet.txt"
 cash_flow         y = y++"-cash-flow.txt"
 closing_balances  y = y++"-closing.journal"
 opening_balances  y = y++"-opening.journal"
+unknown           y = y++"-unknown.journal"
+accounts          y = y++"-accounts.txt"
 
 --
 -- Defining the full set of reports and journals to be generated
@@ -50,6 +52,8 @@ reports first current =
          , [ income_expenses      (show y) | y <- all_years ]
          , [ balance_sheet        (show y) | y <- all_years ]
          , [ cash_flow            (show y) | y <- all_years ]
+         , [ unknown              (show y) | y <- all_years ]
+         , [ accounts             (show y) | y <- all_years ]
          , [ opening_balances     (show y) | y <- all_years, y/=first ]
          , [ closing_balances     (show y) | y <- all_years, y/=current ]
          ]
@@ -114,6 +118,10 @@ export_all flags targets = return $ Just $ do
   (balance_sheet "//*") %> hledger_process_year flags year_inputs ["balancesheet","--no-elide"]
 
   (cash_flow "//*") %> hledger_process_year flags year_inputs ["cashflow","not:desc:(opening balances)","--no-elide"]
+
+  (unknown "//*") %> hledger_process_year flags year_inputs ["print","unknown"]
+
+  (accounts "//*") %> hledger_process_year flags year_inputs ["accounts"]
 
   (closing_balances "//*") %> generate_closing_balances flags year_inputs
 

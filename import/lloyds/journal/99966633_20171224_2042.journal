@@ -12,9 +12,9 @@
 
 2015-04-08 (BP) OASIS COFFEE
     assets:Lloyds:current          £-3.72 = £750.00
-    expenses:unknown
+    expenses:coffee
 
 2015-05-01 (BP) AVIVA
     assets:Lloyds:current        £-100.00 = £650.00
-    expenses:unknown
+    assets:pension:aviva
 
