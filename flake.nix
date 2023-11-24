@@ -11,6 +11,7 @@
         deps = with pkgs; [
           hledger
           hledger-web
+          hledger-ui
         ];
       in
       {
