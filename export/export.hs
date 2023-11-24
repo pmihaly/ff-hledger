@@ -44,6 +44,10 @@ opening_balances  y = y++"-opening.journal"
 unknown           y = y++"-unknown.journal"
 accounts          y = y++"-accounts.txt"
 
+
+investment_years current = [2014..current]
+investments              = "investments.txt"
+
 --
 -- Defining the full set of reports and journals to be generated
 --
@@ -56,6 +60,7 @@ reports first current =
          , [ accounts             (show y) | y <- all_years ]
          , [ opening_balances     (show y) | y <- all_years, y/=first ]
          , [ closing_balances     (show y) | y <- all_years, y/=current ]
+         , [ investments ]
          ]
   where
     all_years=[first..current]
@@ -133,6 +138,8 @@ export_all flags targets = return $ Just $ do
   -- Enumerate directories with auto-generated journals
   [ "//import/lloyds/journal/*.journal" ] |%> csv2journal
 
+  ("//" ++ investments) %> generate_investments_report current year_inputs
+
 -------------------------------------
 -- Implementations of the build rules
 -------------------------------------
@@ -191,6 +198,13 @@ csv2journal out = do
 -------------------
 -- Helper functions
 -------------------
+
+generate_investments_report current year_inputs out = do
+  deps <- mapM (year_inputs . show) (investment_years current)
+  need (concat deps)
+  need [ "./investments.sh" ]
+  (Stdout output) <- cmd "./investments.sh"
+  writeFileChanged out output
 
 -- To get included files, look for 'include' or '!include'. Note that we can't use "hledger files", as
 -- some of the requested includes might be generated and might not exist yet.

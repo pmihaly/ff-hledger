@@ -1,4 +1,9 @@
 ;; This journal is for the current year
 
+
+2017/12/31 pension valuation
+  assets:pension:aviva     = £411.03
+  virtual:unrealized pnl
+
 include ./export/2017-opening.journal
 include ./import/lloyds/journal/99966633_20171223_1844.journal
