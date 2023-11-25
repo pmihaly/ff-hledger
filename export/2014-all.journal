@@ -3,6 +3,12 @@
     assets:cash                             = £150.00
     equity:opening balances
 
+2014-01-02 Taking out mortgage to buy a house for £1000 (£150 downpayment, £5 opening fee, included in mortgage, 2% rate)
+    assets:cash                   £-105.00
+    expenses:mortgage fees           £5.00
+    liabilities:mortgage
+    assets:house                  £1000.00
+
 2014-03-30 (BGC) EMPLOYER INC
     assets:Lloyds:current         £773.72 = £873.72
     income:employer

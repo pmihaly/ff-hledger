@@ -1,8 +1,11 @@
 assets:Lloyds:current
 assets:cash
+assets:house
 assets:pension:aviva
 equity:opening balances
 expenses:groceries
+expenses:mortgage fees
 expenses:unknown
 income:employer
+liabilities:mortgage
 virtual:unrealized pnl

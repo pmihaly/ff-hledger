@@ -5,6 +5,13 @@
   equity:opening balances
 
 
+2014/01/02 Taking out mortgage to buy a house for £1000 (£150 downpayment, £5 opening fee, included in mortgage, 2% rate)
+  assets:cash              -£105
+  expenses:mortgage fees    £5
+  liabilities:mortgage
+  assets:house              £1000
+
+
 2014/12/31 pension valuation
   assets:pension:aviva     = £102.34
   virtual:unrealized pnl

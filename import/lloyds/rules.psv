@@ -7,3 +7,4 @@ WAITROSE|expenses:groceries|
 OASIS COFFEE|expenses:coffee|
 AVIVA|assets:pension:aviva|this is a comment
 2017-10-11.*EMPLOYER INC||per diem for the trip to New York
+HSBC|liabilities:mortgage|

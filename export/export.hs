@@ -1,5 +1,5 @@
 #!/usr/bin/env nix-shell
-#!nix-shell --pure -i runghc -p "haskellPackages.ghcWithPackages (pkgs: with pkgs; [ shake ])" -p "hledger" -p "gnused"
+#!nix-shell --pure -i runghc -p "haskellPackages.ghcWithPackages (pkgs: with pkgs; [ shake ])" -p "hledger" -p "gnused" -p "hledger-interest"
 
 
 import Development.Shake
@@ -47,6 +47,7 @@ accounts          y = y++"-accounts.txt"
 
 investment_years current = [2014..current]
 investments              = "investments.txt"
+mortgage_interest y      = y ++ "-mortgage-interest.journal"
 
 --
 -- Defining the full set of reports and journals to be generated
@@ -61,6 +62,7 @@ reports first current =
          , [ opening_balances     (show y) | y <- all_years, y/=first ]
          , [ closing_balances     (show y) | y <- all_years, y/=current ]
          , [ investments ]
+         , [ mortgage_interest    (show y) | y <- all_years ]
          ]
   where
     all_years=[first..current]
@@ -140,6 +142,8 @@ export_all flags targets = return $ Just $ do
 
   ("//" ++ investments) %> generate_investments_report current year_inputs
 
+  mortgage_interest "//*"  %> generate_mortgage_interest year_inputs
+
 -------------------------------------
 -- Implementations of the build rules
 -------------------------------------
@@ -204,6 +208,16 @@ generate_investments_report current year_inputs out = do
   need (concat deps)
   need [ "./investments.sh" ]
   (Stdout output) <- cmd "./investments.sh"
+  writeFileChanged out output
+
+generate_mortgage_interest year_inputs out = do
+  let year = head $ split out
+  () <- cmd "touch" [out]
+  deps <- year_inputs year
+  need $ filter (not . ((takeFileName out) `isSuffixOf`)) deps
+  need [ "./mortgage_interest.sh" ]
+  (Stdout output) <-
+    cmd "./mortgage_interest.sh" [year]
   writeFileChanged out output
 
 -- To get included files, look for 'include' or '!include'. Note that we can't use "hledger files", as

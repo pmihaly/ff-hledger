@@ -12,6 +12,7 @@
           hledger
           hledger-web
           hledger-ui
+          hledger-interest
         ];
       in
       {
