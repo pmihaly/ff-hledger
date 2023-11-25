@@ -6,4 +6,9 @@
   virtual:unrealized pnl
 
 include ./export/2017-opening.journal
+
+2020-03-09 Foreign currency expense example
+  assets:bank               -£10
+  expenses:whatever         $11.65 @@ £10
+
 include ./import/lloyds/journal/99966633_20171223_1844.journal

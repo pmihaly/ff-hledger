@@ -5,4 +5,8 @@ date-format %d/%m/%Y
 currency1 £
 account2  expenses:unknown
 
+if
+FOREIGN CCY
+  account2 %sortcode @@ £%amount1-out
+
 include rules.psv

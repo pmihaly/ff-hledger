@@ -5,7 +5,6 @@ assets:pension:aviva
 equity:opening balances
 expenses:groceries
 expenses:mortgage fees
-expenses:unknown
 income:employer
 liabilities:mortgage
 virtual:unrealized pnl

@@ -120,7 +120,7 @@ export_all flags targets = return $ Just $ do
 
   (transactions "//*") %> hledger_process_year flags year_inputs ["print"]
 
-  (income_expenses "//*") %> hledger_process_year flags year_inputs ["is","--flat","--no-elide"]
+  (income_expenses "//*") %> hledger_process_year flags year_inputs ["is","--flat","--no-elide","--cost"]
 
   (balance_sheet "//*") %> hledger_process_year flags year_inputs ["balancesheet","--no-elide"]
 

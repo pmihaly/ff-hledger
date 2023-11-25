@@ -1,12 +1,13 @@
 assets:Lloyds:current
 assets:Lloyds:savings
+assets:bank
 assets:cash
 assets:house
 assets:pension:aviva
 equity:opening/closing balances
 expenses:coffee
 expenses:groceries
-expenses:unknown
+expenses:whatever
 income:employer
 income:interest
 liabilities:mortgage

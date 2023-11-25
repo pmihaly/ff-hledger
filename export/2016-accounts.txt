@@ -6,7 +6,7 @@ assets:house
 assets:pension:aviva
 equity:opening/closing balances
 expenses:coffee
-expenses:unknown
+expenses:donations
 income:employer
 liabilities:mortgage
 virtual:unrealized pnl

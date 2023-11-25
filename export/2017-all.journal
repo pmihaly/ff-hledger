@@ -4,7 +4,7 @@
     assets:cash                              £45.00 = £45.00
     assets:house                           £1000.00 = £1000.00
     assets:pension:aviva                    £308.27 = £308.27
-    liabilities:mortgage                   £-900.00 = £-900.00
+    liabilities:mortgage                   £-600.00 = £-600.00
     equity:opening/closing balances
 
 2017-03-30 (BGC) EMPLOYER INC
@@ -13,7 +13,7 @@
 
 2017-03-31 (BGC) HSBC
     assets:Lloyds:current        £-100.00 = £1093.72
-    expenses:unknown
+    liabilities:mortgage
 
 2017-04-01 INTEREST (NET)
     assets:Lloyds:current           £1.21 = £1094.93
@@ -34,4 +34,8 @@
 2017-12-31 pension valuation
     assets:pension:aviva                   = £411.03
     virtual:unrealized pnl
+
+2020-03-09 Foreign currency expense example
+    assets:bank                £-10.00
+    expenses:whatever    $11.65 @@ £10
 

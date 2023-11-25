@@ -4,7 +4,7 @@
 
 2015-03-31 (BGC) HSBC
     assets:Lloyds:current        £-100.00 = £1253.72
-    expenses:unknown
+    liabilities:mortgage
 
 2015-04-07 (DEB) TRANSFER TO 12345678
     assets:Lloyds:current          £-500.00 = £753.72

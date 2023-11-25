@@ -4,7 +4,7 @@
 
 2017-03-31 (BGC) HSBC
     assets:Lloyds:current        £-100.00 = £1093.72
-    expenses:unknown
+    liabilities:mortgage
 
 2017-04-01 INTEREST (NET)
     assets:Lloyds:current           £1.21 = £1094.93

@@ -1,4 +1,4 @@
-Income Statement 2014
+Income Statement 2014, converted to cost
 
                         ||    2014 
 ========================++=========
@@ -12,8 +12,7 @@ Income Statement 2014
 ------------------------++---------
  expenses:groceries     ||  £73.72 
  expenses:mortgage fees ||   £5.00 
- expenses:unknown       || £100.00 
 ------------------------++---------
-                        || £178.72 
+                        ||  £78.72 
 ========================++=========
- Net:                   || £595.00 
+ Net:                   || £695.00 
